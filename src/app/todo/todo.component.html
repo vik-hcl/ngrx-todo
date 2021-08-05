@@ -1,0 +1,5 @@
+<input type="text" [(ngModel)]="newTodo"><button (click)="addTodo(newTodo)">Add</button><button (click)="deleteTodo(newTodo)">Delete</button>
+
+<div *ngFor="let item of allTodos">
+    <p>{{ item }}</p>
+</div>
